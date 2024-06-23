@@ -128,13 +128,13 @@ h1 {
     }
 
     #jokeBtn {
-        width: 23vw;
+        width: 25vw;
         height: 6vh;
         font-size: 14px;
     }
 
     #jokeBtn:hover {
-        width: 23vw
+        width: 25vw
     }
         
 }
