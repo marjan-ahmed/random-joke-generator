@@ -1,27 +1,28 @@
-body{
+body {
     background-color: rgb(32, 32, 32);
     margin: 0;
-    padding: 0 ;
+    padding: 0;
     background-image: url('https://media.istockphoto.com/id/1994973954/photo/happy-face-emoji-surrounded-by-many-emojis-on-yellow-background.webp?b=1&s=170667a&w=0&k=20&c=8hZBT0x1H_5knb7vTSyF444STBX6dmCkfuq_ZQAcB30=');
     background-size: cover;
     background-repeat: no-repeat;
     background-origin: border-box;
     background-attachment: fixed;
 }
-h1{
+
+h1 {
     font-family: jost, serif;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     text-align: center;
     margin-top: 15vh;
     margin-bottom: 20px;
     font-size: 36px;
 }
-.container{
+
+.container {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    -ms-align-items: center;
     color: black;
     font-family: poppins;
     font-weight: 600;
@@ -32,42 +33,127 @@ h1{
     margin-right: auto;
     width: 30vw;
     height: 38vh;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     border-radius: 5px;
     box-shadow: 4px 4px 6px 4px rgba(250, 229, 36, 0.925);
     z-index: 2;
     overflow: hidden;
-};
+}
 
-#joke{
+#joke {
     text-align: center;
 }
 
-#jokeBtn{
+#jokeBtn {
     display: block;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5vh;
     padding: 10px;
-    width: 10vw;
+    width: 15vw;
     height: 8vh;
     font-size: 15px;
     color: black;
-    background: aliceblue;
+    background: rgb(65, 218, 52);
     border: 2px solid black;
     border-radius: 5px;
     font-family: poppins;
     text-transform: uppercase;
     font-weight: 800;
+    letter-spacing: 3px;
+
+    animation: exampleAnimation 4s infinite;
+    
 }
 
-#jokeBtn:hover{
-    background-color: yellow;
+@keyframes exampleAnimation {
+    0% {
+        transform: translateX(-100px);
+        background-color: rgb(146, 30, 175);
+        color: white;
+
+    }
+    20% {
+        transform: translateX(0);
+        background-color: rgb(235, 33, 33);
+        color: white;
+    }
+    40% {
+        transform: translateX(100px);
+        background-color: rgb(21, 52, 94);
+        color: white;
+    }
+    60% {
+        transform: translateX(0);
+        background-color: green;
+        color: white;
+    }
+    80% {
+        transform: translateX(-100px);
+        background-color: yellow;
+        color: black;
+    }
+    100% {
+        transform: translateX(0);
+        background-color: rgb(41, 13, 94);
+        color: white;
+    }
+}
+
+#jokeBtn:hover {
+    background-color: rgb(38, 238, 20);
     color: black;
     transition: 0.3s;
-    box-shadow: 2px 2px 5px 10px yellow;
     cursor: pointer;
-    outline: 1px solid black
+    border: 2px dashed black;   
+    border-radius: 50px;
+    width: 11vw;
+}
+
+
+/* For tablets and larger screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+        margin-top: 15vh;
+    }
+
+    .container {
+        width: 70vw;
+        height: 40vh;
+        font-size: 18px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #jokeBtn {
+        width: 25vw;
+        height: 6vh;
+        font-size: 14px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+        margin-top: 18vh;
+    }
+
+    .container {
+        width: 80vw;
+        height: 32vh;
+        font-size: 16px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 20px;
+    }
+
+    #jokeBtn {
+        width: 32vw;
+        height: 6vh;
+        font-size: 12px;
+    }
 }
