@@ -7,6 +7,7 @@ body {
     background-repeat: no-repeat;
     background-origin: border-box;
     background-attachment: fixed;
+    object-fit: cover;
 }
 
 h1 {
@@ -23,7 +24,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: white;
     font-family: poppins;
     font-weight: 600;
     font-size: 20px;
@@ -36,7 +37,7 @@ h1 {
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     border-radius: 5px;
-    box-shadow: 4px 4px 6px 4px rgba(250, 229, 36, 0.925);
+    box-shadow: 4px 4px 6px 4px #0e4578;
     z-index: 2;
     overflow: hidden;
 }
