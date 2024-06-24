@@ -2,7 +2,7 @@ body {
     background-color: rgb(32, 32, 32);
     margin: 0;
     padding: 0;
-    background-image: url('https://media.istockphoto.com/id/1994973954/photo/happy-face-emoji-surrounded-by-many-emojis-on-yellow-background.webp?b=1&s=170667a&w=0&k=20&c=8hZBT0x1H_5knb7vTSyF444STBX6dmCkfuq_ZQAcB30=');
+    background-image: url('https://images.unsplash.com/photo-1628260412297-a3377e45006f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjZ8fGVtb2ppJTIwc21pbGUnfGVufDB8fDB8fHww');
     background-size: cover;
     background-repeat: no-repeat;
     background-origin: border-box;
@@ -70,33 +70,27 @@ h1 {
 
 @keyframes exampleAnimation {
     0% {
-        transform: translateX(-100px);
         background-color: rgb(146, 30, 175);
         color: white;
 
     }
     20% {
-        transform: translateX(0);
         background-color: rgb(235, 33, 33);
         color: white;
     }
     40% {
-        transform: translateX(100px);
         background-color: rgb(21, 52, 94);
         color: white;
     }
     60% {
-        transform: translateX(0);
         background-color: green;
         color: white;
     }
     80% {
-        transform: translateX(-100px);
         background-color: yellow;
         color: black;
     }
     100% {
-        transform: translateX(0);
         background-color: rgb(41, 13, 94);
         color: white;
     }
@@ -160,7 +154,7 @@ h1 {
         height: 6vh;
         font-size: 12px;
     }
-    #jokeBtn {
+    #jokeBtn:hover {
         width: 33vw;
     }
 }
