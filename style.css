@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-    font-family: jost, serif;
+    font-family: jost, sans-serif;
     color: #fbdc34;
     text-align: center;
     margin-top: 15vh;
@@ -24,7 +24,7 @@ h1 {
     justify-content: center;
     align-items: center;
     color: white;
-    font-family: poppins;
+    font-family: poppins, , sans-serif;
     font-weight: 300;
     font-size: 20px;
     padding-left: 40px;
@@ -59,7 +59,7 @@ h1 {
     background: rgb(65, 218, 52);
     border: 2px solid black;
     border-radius: 5px;
-    font-family: poppins;
+    font-family: poppins, sans-serif;
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 3px;
