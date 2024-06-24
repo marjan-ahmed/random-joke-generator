@@ -24,15 +24,16 @@ h1 {
     justify-content: center;
     align-items: center;
     color: white;
-    font-family: poppins, , sans-serif;
+    font-family: poppins, sans-serif;
     font-weight: 300;
     font-size: 20px;
     padding-left: 40px;
     padding-right: 40px;
     margin-left: auto;
     margin-right: auto;
-    width: 30vw;
-    height: 38vh;
+    width: 33vw;
+    height: 38.6vh;
+    line-height: 1.1;
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     border-radius: 5px;
@@ -63,12 +64,11 @@ h1 {
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 3px;
-
-    animation: exampleAnimation 4s infinite;
+    animation: colorChanging 4s infinite;
     
 }
 
-@keyframes exampleAnimation {
+@keyframes colorChanging {
     0% {
         background-color: rgb(146, 30, 175);
         color: white;
